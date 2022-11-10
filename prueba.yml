@@ -3,5 +3,5 @@ jobs:
   check-sha-in -other-file:
     runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
     steps:
-      - name: Setup node
+      - name: Call sha in other file
         run: echo "prueba.yml "$actual_sha 
