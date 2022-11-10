@@ -1,0 +1,11 @@
+name: build_to_dinamic_sha
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code sha generate 
+        with: 
+          manifests: prueba.yml
