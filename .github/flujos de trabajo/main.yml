@@ -35,8 +35,7 @@ jobs:
         run: echo "Hola "${{github.sha}}
         
       - name: Call sha generate 2do
-        run: echo "Hola 2 "actual_sha 
-    
+        run: echo "Hola 2 "$actual_sha 
  
  
  
