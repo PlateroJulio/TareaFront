@@ -35,8 +35,15 @@ jobs:
         run: echo "Hola "${{github.sha}}
         
       - name: Call sha generate 2do
-        run: prueba.yml 
- 
+        uses: ./
+          # the parameters below are only necessary
+          # because we are running these examples in a monorepo
+          with:
+            working-directory: ./
+            # just for full picture after installing Cypress
+            # print information about detected browsers, etc
+            # see https://on.cypress.io/command-line#cypress-info
+            build: npx prueba.yml 
  
  
  
