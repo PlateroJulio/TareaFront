@@ -36,3 +36,5 @@ jobs:
                
       - name: Call sha generate 2do
         run: ls -a
+      - name: build file YML extern
+        run: npx cypress info
