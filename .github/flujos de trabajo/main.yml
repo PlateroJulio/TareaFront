@@ -33,10 +33,7 @@ jobs:
 
       - name: Call sha generate
         run: echo "Hola "${{github.sha}}
-        
-      - name: Call sha generate 2do
-        uses: ./
-        run: ls -a
+
  
  
  
